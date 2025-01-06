@@ -4,9 +4,8 @@ import { StyleSheet } from "react-native";
 import { PaperProvider } from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
-import Login from "./components/Login";
-import Profile from "./components/Profile";
 import Home from "./components/Home";
+import Login from "./components/Login";
 
 export default function App() {
   const Stack = createNativeStackNavigator();

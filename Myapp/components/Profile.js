@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
-import { Avatar, Card } from "react-native-paper";
+import { Card } from "react-native-paper";
 
 const Profile = ({ student }) => {
   return (
@@ -12,7 +12,7 @@ const Profile = ({ student }) => {
           <Image source={student.profile_pic} style={styles.profile_pic} />
           <Text style={styles.h1}>{student.name}</Text>
           <Text style={{ textAlign: "center" }}>
-            Age : {student.age} | Gender: {student.gender}
+            Age: {student.age} | Gender: {student.gender}
           </Text>
 
           <Text style={{ fontWeight: "bold", marginTop: 20 }}>
@@ -24,7 +24,7 @@ const Profile = ({ student }) => {
 
           <View
             style={{
-              marginBlock: 20,
+              marginVertical: 20,
               borderBottomColor: "black",
               borderBottomWidth: StyleSheet.hairlineWidth,
             }}
@@ -62,6 +62,6 @@ const styles = StyleSheet.create({
     width: 150,
     height: 150,
     borderRadius: 100,
-    margin: "auto",
+    alignSelf: "center",
   },
 });

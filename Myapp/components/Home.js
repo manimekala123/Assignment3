@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { BottomNavigation, Text } from "react-native-paper";
-import Profile from "./Profile";
+import { BottomNavigation } from "react-native-paper";
 import Courses from "./Courses";
+import Profile from "./Profile";
 import Subjects from "./Subjects";
 
 const Home = ({ route }) => {
@@ -18,8 +18,8 @@ const Home = ({ route }) => {
     {
       key: "courses",
       title: "Courses",
-      focusedIcon: "book",
-      unfocusedIcon: "book-outline",
+      focusedIcon: "school",
+      unfocusedIcon: "school-outline",
     },
     {
       key: "subjects",

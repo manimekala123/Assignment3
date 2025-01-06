@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
-import { Avatar, Card } from "react-native-paper";
+import { Card } from "react-native-paper";
 import { courses } from "../assets/StudentsDb";
 
 const Courses = ({ student }) => {
@@ -19,7 +19,7 @@ const Courses = ({ student }) => {
 
           <View
             style={{
-              marginBlock: 20,
+              marginVertical: 20,
               borderBottomColor: "black",
               borderBottomWidth: StyleSheet.hairlineWidth,
             }}
@@ -55,11 +55,5 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 100,
     resizeMode: "contain",
-  },
-  profile_pic: {
-    width: 150,
-    height: 150,
-    borderRadius: 100,
-    margin: "auto",
   },
 });

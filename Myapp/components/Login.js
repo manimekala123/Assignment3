@@ -41,6 +41,8 @@ const Login = () => {
   };
 
   return (
+   
+      
         <View style={styles.body}>
           <Image source={require("../assets/logo.png")} style={styles.image} />
 
@@ -63,13 +65,13 @@ const Login = () => {
                 style={styles.form.input}
                 value={data.password}
                 onChangeText={(text) => setData({ ...data, password: text })}
+                secureTextEntry={isSecure}
                 right={
                   <TextInput.Icon
                     icon="eye"
                     onPress={() => setIsSecure(!isSecure)}
                   />
                 }
-                secureTextEntry={isSecure}
               />
 
               <Button
@@ -93,6 +95,7 @@ const Login = () => {
             <Text style={styles.footer.text}>&copy; 2025 UoV Student Care</Text>
           </View>
         </View>
+     
   );
 };
 
@@ -116,7 +119,6 @@ const styles = StyleSheet.create({
   footer: {
     backgroundColor: "#4b0150",
     width: "100%",
-    color: "#fff",
     padding: 20,
     text: {
       color: "#fff",
